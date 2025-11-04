@@ -5,7 +5,7 @@ pipeline {
 		pollSCM('*****')
 	}
 	stages {
-		stages('Checkout') {
+		stage('Checkout') {
 			steps {
 				git branch: 'main',
 				url: 'https://github.com/youngjinkonan-a11y/source-maven-java-spring-hello-webapp.git'
@@ -23,4 +23,4 @@ pipeline {
 		}
 	}
 }
-		
+	
