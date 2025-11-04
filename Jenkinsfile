@@ -2,13 +2,13 @@ pipeline {
 	agent any
 	
 	triggers {
-		pollSCM('*****')
+		pollSCM('* * * * *')
 	}
 	stages {
 		stage('Checkout') {
 			steps {
 				git branch: 'main',
-				url: 'https://github.com/youngjinkonan-a11y/source-maven-java-spring-hello-webapp.git'
+				url:`https://github.com/youngjinkonan-a11y/source-maven-java-spring-hello-webapp.git`
 			}
 		}
 		stage('Build') {
