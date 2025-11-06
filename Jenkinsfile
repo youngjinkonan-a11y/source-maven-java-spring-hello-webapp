@@ -12,7 +12,7 @@ pipeline {
       }
       steps {
  	git branch: 'main',
-	url: 'https://github.com/jhkim-09/source-maven-java-spring-hello-webapp.git'
+	url: 'https://github.com/nobreak-labs/source-maven-java-spring-hello-webapp.git'
       }
     }
     stage('Build') {
